@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        input{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            width: 60%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 20px;
+           
+        }
+        
+        .defaulthead{
+            color: brown;
+        }
+        .defaultbox{
+            border: 2px solid black;
+            margin: 10px;
+            height: auto;
+            width: 96vw;
+        }
+        .alphas{
+            display: inline-block;
+            margin:5px;
+            background-color: #71ffde;
+            padding: 20px;
+            border-radius: 20%;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+        }
+        .exceptchar{
+            background-color: #787c7e;
+        }
+        .withchar{
+            background-color: #c9b458;
+        }
+        .maininput{
+            width: 80vw;
+            margin: auto;
+        }
+    </style>
+    <head runat="server">
+        <title></title>
+        
+    </head>
+    <body style="text-align: center;">
+        <div style="font-size: 20px;text-align: center;">
+            <section class="defaultbox">
+                <h2 class="defaulthead">Non-containing Characters</h2>
+                <section style="padding: 60px;border: 2px solid black;height: auto;">
+                   
+
+                </section>
+            </section>
+            <div class="defaultbox">
+                <h2 class="defaulthead">containing Characters</h2>
+                <section style="padding: 60px;border: 2px solid black;height: auto;">
+                  
+                </section>
+            </div>
+            <h1>Write query here</h1>
+            <div class="maininput">
+
+            </div>
+            <label for="fname">Your Word:</label><br>
+            <input type="text" id="word" placeholder="Enter the word here"><br><br>
+            <label for="lname">Green arrangement:</label><br>
+            <input type="text" id="greear" value="-----"><br><br>
+            <label for="lname">Yello arrangement:</label><br>
+            <input type="text" id="yellar" value="-----"><br><br>
+            <button type="submit" value="Submit" style="background-color: rgb(120, 120, 120);"  onclick="fetchword()" >Get Words </button>
+        </div>
+        <h1>Probable Words</h1>
+        <div id="probables">
+
+        </div>
+        <script src="wordle.js"></script>
+    </body>
+</html>

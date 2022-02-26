@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORDLE SOLVER</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="container">
+        <div id="game">
+          <header>
+            <h1 class="title">WORDLE SOLVER</h1>
+            <h4 style="text-align: center;color: #ef3f5a;"> <i> _by<a href="https://www.linkedin.com/in/mainak-deb-36875a1b7/" style="color: #ef3f5a;"> Mainak Deb</a>_</i>  </h4>
+          </header>
+  
+          <div id="board-container">
+              <div style="padding:10px 0px 25px 0px;">
+                    <div class="board" id="play1">           
+                    </div>
+                    <div class="board" id="play2">
+                        <div class="alphas" id="charid1" > </div>
+                        <div class="alphas" id="charid2" ></div>
+                        <div class="alphas" id="charid3" ></div>
+                        <div class="alphas" id="charid4" ></div>
+                        <div class="alphas" id="charid5" ></div>
+                    
+                    </div>
+                </div>
+            <div>
+
+                <div class="flex-form">
+                   
+                    <input id="theinput" type="text" placeholder="Enter the entered word"  oninput="writeword()">
+                   <button class="enter" onclick="enterword()">Enter</button>
+                </div>
+            </div>
+          </div>
+          
+            
+    </div>
+    <h1 class="title">POSSIBLE WORDS</h1>
+            <div id="answers">
+              <div>Possible words will appear here</div>
+            </div>
+
+    <script src="wordle.js"></script>
+</body>
+</html>
